@@ -2,7 +2,9 @@
     {
         "description": "L2_to_Cat03_Template",
         "interface": "xe-0/0/9",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -105,7 +107,9 @@
     {
         "description": "SNG3-1-7A_VC1_X1",
         "interface": "xe-0/0/10",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -210,7 +214,9 @@
     {
         "description": "SNG3-1-9A_VC1_X1",
         "interface": "xe-0/0/11",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -315,12 +321,16 @@
     {
         "description": "NetScaller11515",
         "interface": "xe-0/0/12",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "VLG-BIS-CN2_data1",
         "interface": "xe-0/0/13",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "69"
         ]
@@ -328,12 +338,16 @@
     {
         "description": "VLG-BIS-DB02_data1",
         "interface": "xe-0/0/14",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "VLG-LOCS-DB02_data1",
         "interface": "xe-0/0/15",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "535"
         ]
@@ -341,7 +355,9 @@
     {
         "description": "SNG3-1-4_VC1_X1",
         "interface": "xe-0/0/16",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -446,7 +462,9 @@
     {
         "description": "SNG3-1-4_VC1_X2",
         "interface": "xe-0/0/17",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "22",
             "150",
@@ -456,12 +474,16 @@
     {
         "description": "SNG3-1-6_VC1",
         "interface": "xe-0/0/18",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "SNG3-1-7A_VC1_X2",
         "interface": "xe-0/0/19",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "13",
             "19",
@@ -475,7 +497,9 @@
     {
         "description": "SNG3-1-7B_VC1_X1",
         "interface": "xe-0/0/20",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -580,7 +604,9 @@
     {
         "description": "SNG3-1-7B_VC1_X2",
         "interface": "xe-0/0/21",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "22",
             "36"
@@ -589,7 +615,9 @@
     {
         "description": "SNG3-1-8A_VC1",
         "interface": "xe-0/0/22",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "81",
             "218",
@@ -609,7 +637,9 @@
     {
         "description": "SNG3-1-9A_VC1_X2",
         "interface": "xe-0/0/23",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "82"
         ]
@@ -617,7 +647,9 @@
     {
         "description": "vlg-sng-win-09-mix_VC1_X1",
         "interface": "xe-0/0/24",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -722,42 +754,58 @@
     {
         "description": "vlg-sng-win-09-mix_VC1_X2",
         "interface": "xe-0/0/25",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "SNG3-1-8A_VC1_X2",
         "interface": "xe-0/0/26",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "\"SPAN",
         "interface": "xe-0/0/27",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "to_SMR-SNG135-ASBR1_Te0/2/0/0",
         "interface": "xe-0/0/92",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "to_SMR-SNG135-ASBR1_Te0/2/0/1",
         "interface": "xe-0/0/93",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "to_SMR-SNG135-ASBR1_Te0/3/0/0",
         "interface": "xe-0/0/94",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "to_SMR-SNG135-ASBR1_Te0/3/0/1",
         "interface": "xe-0/0/95",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "SNG3-1-7A_VC2_X1",
         "interface": "xe-1/0/10",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -862,7 +910,9 @@
     {
         "description": "SNG3-1-9A_VC2_X1",
         "interface": "xe-1/0/11",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -967,12 +1017,16 @@
     {
         "description": "NetScaller11515",
         "interface": "xe-1/0/12",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "VLG-BIS-CN2_data2",
         "interface": "xe-1/0/13",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "69"
         ]
@@ -980,12 +1034,16 @@
     {
         "description": "VLG-BIS-DB02_data2",
         "interface": "xe-1/0/14",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "VLG-LOCS-DB02_data2",
         "interface": "xe-1/0/15",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "535"
         ]
@@ -993,7 +1051,9 @@
     {
         "description": "SNG3-1-4_VC2_X1",
         "interface": "xe-1/0/16",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -1098,7 +1158,9 @@
     {
         "description": "SNG3-1-4_VC2_X2",
         "interface": "xe-1/0/17",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "22",
             "150",
@@ -1108,12 +1170,16 @@
     {
         "description": "SNG3-1-6_VC2",
         "interface": "xe-1/0/18",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "SNG3-1-7A_VC2_X2",
         "interface": "xe-1/0/19",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "13",
             "19",
@@ -1127,7 +1193,9 @@
     {
         "description": "SNG3-1-7B_VC2_X1",
         "interface": "xe-1/0/20",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -1232,7 +1300,9 @@
     {
         "description": "SNG3-1-7B_VC2_X2",
         "interface": "xe-1/0/21",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "22",
             "36"
@@ -1241,7 +1311,9 @@
     {
         "description": "SNG3-1-8A_VC2",
         "interface": "xe-1/0/22",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "81",
             "218",
@@ -1261,7 +1333,9 @@
     {
         "description": "SNG3-1-9A_VC2_X2",
         "interface": "xe-1/0/23",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "82"
         ]
@@ -1269,7 +1343,9 @@
     {
         "description": "vlg-sng-win-09-mix_VC2_X1",
         "interface": "xe-1/0/24",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "11",
             "14",
@@ -1374,12 +1450,16 @@
     {
         "description": "vlg-sng-win-09-mix_VC2_X2",
         "interface": "xe-1/0/25",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "SNG3-1-8A_VC2_X2",
         "interface": "xe-1/0/26",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "16",
             "18-23",
@@ -1473,7 +1553,9 @@
     {
         "description": "rezerv_DC_1500420",
         "interface": "ge-2/0/0",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "42"
         ]
@@ -1481,7 +1563,9 @@
     {
         "description": "rezerv_DC_1500420",
         "interface": "ge-2/0/1",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "42"
         ]
@@ -1489,7 +1573,9 @@
     {
         "description": "rezerv_C1500420_ILO",
         "interface": "ge-2/0/2",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1497,7 +1583,9 @@
     {
         "description": "NetScaller11515_lom",
         "interface": "ge-2/0/7",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "151"
         ]
@@ -1505,7 +1593,9 @@
     {
         "description": "NetScaller11515_mng",
         "interface": "ge-2/0/8",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "161"
         ]
@@ -1513,7 +1603,9 @@
     {
         "description": "vlg-sng-3p7400-02_mgmt0",
         "interface": "ge-2/0/9",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "147"
         ]
@@ -1521,7 +1613,9 @@
     {
         "description": "vlg-sng-3p7400-02_mgmt2",
         "interface": "ge-2/0/11",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "147"
         ]
@@ -1529,7 +1623,9 @@
     {
         "description": "SNG3-1-7A_OA1",
         "interface": "ge-2/0/17",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1537,7 +1633,9 @@
     {
         "description": "SNG3-1-7B_OA1",
         "interface": "ge-2/0/19",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1545,7 +1643,9 @@
     {
         "description": "vlg-sng-3p7450-02_mgmt0",
         "interface": "ge-2/0/24",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "182"
         ]
@@ -1553,7 +1653,9 @@
     {
         "description": "VLG-LOCS-DB02_ILO",
         "interface": "ge-2/0/25",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1561,7 +1663,9 @@
     {
         "description": "vlg-sng-3p7450-02_mgmt2",
         "interface": "ge-2/0/26",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "182"
         ]
@@ -1569,7 +1673,9 @@
     {
         "description": "SNG3-1-6_OA1",
         "interface": "ge-2/0/27",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1577,7 +1683,9 @@
     {
         "description": "SNG3-1-8A_OA1",
         "interface": "ge-2/0/29",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1585,7 +1693,9 @@
     {
         "description": "SNG3-1-4_OA1",
         "interface": "ge-2/0/32",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1593,7 +1703,9 @@
     {
         "description": "vlg-sng-3p7400c-05_mgmt0",
         "interface": "ge-2/0/33",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "383"
         ]
@@ -1601,7 +1713,9 @@
     {
         "description": "SNG3-1-9A_OA1",
         "interface": "ge-2/0/34",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1609,7 +1723,9 @@
     {
         "description": "vlg-sng-3p7400c-05_mgmt2",
         "interface": "ge-2/0/35",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "383"
         ]
@@ -1617,7 +1733,9 @@
     {
         "description": "vlg-fc1-sng333-dc1",
         "interface": "ge-2/0/40",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "107"
         ]
@@ -1625,7 +1743,9 @@
     {
         "description": "vlg-sng-3p7400c-04_mgmt0",
         "interface": "ge-2/0/41",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "384"
         ]
@@ -1633,7 +1753,9 @@
     {
         "description": "VLG-BIS-CN2_ilo",
         "interface": "ge-2/0/42",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1641,7 +1763,9 @@
     {
         "description": "vlg-sng-3p7400c-04_mgmt2",
         "interface": "ge-2/0/43",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "384"
         ]
@@ -1649,7 +1773,9 @@
     {
         "description": "L2_to_IBS7_Template",
         "interface": "ge-2/0/47",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "161",
             "171"
@@ -1658,7 +1784,9 @@
     {
         "description": "rezerv_DC_C1500420",
         "interface": "ge-3/0/0",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "42"
         ]
@@ -1666,7 +1794,9 @@
     {
         "description": "rezerv_DC_C1500420",
         "interface": "ge-3/0/1",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "42"
         ]
@@ -1674,7 +1804,9 @@
     {
         "description": "rezerv_C1500420_ILO",
         "interface": "ge-3/0/2",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1682,6 +1814,8 @@
     {
         "description": "rezerved_for_OIB",
         "interface": "ge-3/0/3",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": [
             "143"
         ]
@@ -1689,7 +1823,9 @@
     {
         "description": "rezerved_for_OIB",
         "interface": "ge-3/0/4",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "143"
         ]
@@ -1697,7 +1833,9 @@
     {
         "description": "rezerved_for_OIB",
         "interface": "ge-3/0/5",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "151"
         ]
@@ -1705,7 +1843,9 @@
     {
         "description": "rezerved_for_OIB",
         "interface": "ge-3/0/6",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "151"
         ]
@@ -1713,12 +1853,16 @@
     {
         "description": "rezerved_for_OIB_span",
         "interface": "ge-3/0/7",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "vlg-sng-3p7400-02_mgmt1",
         "interface": "ge-3/0/9",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "147"
         ]
@@ -1726,7 +1870,9 @@
     {
         "description": "vlg-sng-3p7400-02_mgmt3",
         "interface": "ge-3/0/11",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "147"
         ]
@@ -1734,7 +1880,9 @@
     {
         "description": "SNG3-1-7A_OA2",
         "interface": "ge-3/0/17",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1742,7 +1890,9 @@
     {
         "description": "SNG3-1-7B_OA2",
         "interface": "ge-3/0/19",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1750,12 +1900,16 @@
     {
         "description": "vlg-sng-3p7450-02_mgmt1",
         "interface": "ge-3/0/24",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "FC4-dc3621-DC2_mgmt",
         "interface": "ge-3/0/25",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "107"
         ]
@@ -1763,12 +1917,16 @@
     {
         "description": "vlg-sng-3p7450-02_mgmt3",
         "interface": "ge-3/0/26",
+        "ipaddress": "",
+        "unit": "0",
         "vlans": []
     },
     {
         "description": "SNG3-1-6_OA2",
         "interface": "ge-3/0/27",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1776,7 +1934,9 @@
     {
         "description": "SNG3-1-8A_OA2",
         "interface": "ge-3/0/29",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1784,7 +1944,9 @@
     {
         "description": "SNG3-1-4_OA2",
         "interface": "ge-3/0/32",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1792,7 +1954,9 @@
     {
         "description": "vlg-sng-3p7400c-05_mgmt1",
         "interface": "ge-3/0/33",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "383"
         ]
@@ -1800,7 +1964,9 @@
     {
         "description": "SNG3-1-9A_OA2",
         "interface": "ge-3/0/34",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1808,7 +1974,9 @@
     {
         "description": "vlg-sng-3p7400c-05_mgmt3",
         "interface": "ge-3/0/35",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "383"
         ]
@@ -1816,7 +1984,9 @@
     {
         "description": "vlg-sng-3p7400c-04_mgmt1",
         "interface": "ge-3/0/41",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "384"
         ]
@@ -1824,7 +1994,9 @@
     {
         "description": "VLG-BIS-DB02_ILO",
         "interface": "ge-3/0/42",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "32"
         ]
@@ -1832,7 +2004,9 @@
     {
         "description": "vlg-sng-3p7400c-04_mgmt3",
         "interface": "ge-3/0/43",
+        "ipaddress": "",
         "mode": "access",
+        "unit": "0",
         "vlans": [
             "384"
         ]
@@ -1840,7 +2014,9 @@
     {
         "description": "to_SMR-SNG135-ASBR1",
         "interface": "ae0",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "193",
             "210",
@@ -1852,7 +2028,9 @@
     {
         "description": "to_SMR-SNG136-ASBR2",
         "interface": "ae1",
+        "ipaddress": "",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "210",
             "218",
@@ -1862,7 +2040,9 @@
     {
         "description": "NetScaller11515",
         "interface": "ae2",
+        "ipaddress": "10.63.8.91/26",
         "mode": "trunk",
+        "unit": "0",
         "vlans": [
             "45",
             "171",
@@ -1873,6 +2053,1660 @@
     {
         "description": "Georeser_MNP_Servers_Q1083619",
         "interface": "irb",
+        "ipaddress": "10.63.92.153/29",
+        "unit": "2",
+        "vlans": []
+    },
+    {
+        "description": "apn_4g_vos4",
+        "interface": "irb",
+        "ipaddress": "10.63.128.113/29",
+        "unit": "4",
+        "vlans": []
+    },
+    {
+        "description": "IT_Vlan_CC_Pilot_Project",
+        "interface": "irb",
+        "ipaddress": "10.63.5.1/24",
+        "unit": "9",
+        "vlans": []
+    },
+    {
+        "description": "Management",
+        "interface": "irb",
+        "ipaddress": "10.108.127.114/28",
+        "unit": "10",
+        "vlans": []
+    },
+    {
+        "description": "Cisco_mgm_Mich",
+        "interface": "irb",
+        "ipaddress": "10.63.8.129/27",
+        "unit": "12",
+        "vlans": []
+    },
+    {
+        "description": "DWDM_Metro6100_IM296694",
+        "interface": "irb",
+        "ipaddress": "10.63.42.49/28",
+        "unit": "13",
+        "vlans": []
+    },
+    {
+        "description": "mgm",
+        "interface": "irb",
+        "ipaddress": "10.163.26.65/27",
+        "unit": "14",
+        "vlans": []
+    },
+    {
+        "description": "MSC",
+        "interface": "irb",
+        "ipaddress": "10.63.1.1/24",
+        "unit": "16",
+        "vlans": []
+    },
+    {
+        "description": "Vlan18_dmz1",
+        "interface": "irb",
+        "ipaddress": "10.163.196.81/29",
+        "unit": "18",
+        "vlans": []
+    },
+    {
+        "description": "Multidevice_Q1368693",
+        "interface": "irb",
+        "ipaddress": "10.8.5.225/28",
+        "unit": "19",
+        "vlans": []
+    },
+    {
+        "description": "Yota_TY_Chat-Bot",
+        "interface": "irb",
+        "ipaddress": "10.108.164.1/27",
+        "unit": "20",
+        "vlans": []
+    },
+    {
+        "description": "vlg-errpay-2_Q1285022",
+        "interface": "irb",
+        "ipaddress": "10.163.208.153/29",
+        "unit": "21",
+        "vlans": []
+    },
+    {
+        "description": "TermServ_CallCenter_Q1756675",
+        "interface": "irb",
+        "ipaddress": "10.8.178.254/24",
+        "unit": "22",
+        "vlans": []
+    },
+    {
+        "description": "HAS_CRT_MM_Q1214764",
+        "interface": "irb",
+        "ipaddress": "10.163.125.193/28",
+        "unit": "25",
+        "vlans": []
+    },
+    {
+        "description": "HAS_CRT_Q1215474",
+        "interface": "irb",
+        "ipaddress": "10.163.125.241/28",
+        "unit": "26",
+        "vlans": []
+    },
+    {
+        "description": "VLG-VDI-EdgeSight_Servers_Vlan27",
+        "interface": "irb",
+        "ipaddress": "10.163.27.225/27",
+        "unit": "27",
+        "vlans": []
+    },
+    {
+        "description": "DFS_systems_L0116861",
+        "interface": "irb",
+        "ipaddress": "10.12.181.1/24",
+        "unit": "28",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_Netscaler_VPX1000_vl29",
+        "interface": "irb",
+        "ipaddress": "10.163.29.17/29",
+        "unit": "29",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_Netscaler_VPX1000_vl30",
+        "interface": "irb",
+        "ipaddress": "10.163.26.209/28",
+        "unit": "30",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_Netscaler_VPX1000_vl31",
+        "interface": "irb",
+        "ipaddress": "10.163.92.33/28",
+        "unit": "31",
+        "vlans": []
+    },
+    {
+        "description": "iLO_C1501193",
+        "interface": "irb",
+        "ipaddress": "10.112.6.1/24",
+        "unit": "32",
+        "vlans": []
+    },
+    {
+        "description": "M2M_ECUM_Tomcat_IM303867",
+        "interface": "irb",
+        "ipaddress": "10.163.34.33/29",
+        "unit": "34",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_XenApp_IM255416",
+        "interface": "irb",
+        "ipaddress": "10.63.61.217/29",
+        "unit": "36",
+        "vlans": []
+    },
+    {
+        "description": "KPZ_Servers_IM317111",
+        "interface": "irb",
+        "ipaddress": "10.63.213.113/28",
+        "unit": "40",
+        "vlans": []
+    },
+    {
+        "description": "vlg-iport-mail2_mngmt_Q1146843",
+        "interface": "irb",
+        "ipaddress": "10.163.125.129/29",
+        "unit": "41",
+        "vlans": []
+    },
+    {
+        "description": "DomainController_C1501195",
+        "interface": "irb",
+        "ipaddress": "10.112.5.17/28",
+        "unit": "42",
+        "vlans": []
+    },
+    {
+        "description": "Near-Billing_Windows_Servers_Q1038957",
+        "interface": "irb",
+        "ipaddress": "10.63.213.97/28",
+        "unit": "43",
+        "vlans": []
+    },
+    {
+        "description": "CRM_AUTO_CF_Q1059272",
+        "interface": "irb",
+        "ipaddress": "10.63.44.129/29",
+        "unit": "44",
+        "vlans": []
+    },
+    {
+        "description": "WebSSO-Balancer_Q1158053",
+        "interface": "irb",
+        "ipaddress": "10.163.196.193/29",
+        "unit": "45",
+        "vlans": []
+    },
+    {
+        "description": "VMware_ESXi_L0218738",
+        "interface": "irb",
+        "ipaddress": "10.2.36.129/25",
+        "unit": "50",
+        "vlans": []
+    },
+    {
+        "description": "IUM_Heartbeat",
+        "interface": "irb",
+        "ipaddress": "10.163.51.137/29",
+        "unit": "51",
+        "vlans": []
+    },
+    {
+        "description": "HAS_USFA",
+        "interface": "irb",
+        "ipaddress": "10.163.51.177/29",
+        "unit": "52",
+        "vlans": []
+    },
+    {
+        "description": "MBUS_Q1281258",
+        "interface": "irb",
+        "ipaddress": "10.163.208.129/29",
+        "unit": "53",
+        "vlans": []
+    },
+    {
+        "description": "Zookeeper_Q1308507",
+        "interface": "irb",
+        "ipaddress": "10.163.215.161/28",
+        "unit": "54",
+        "vlans": []
+    },
+    {
+        "description": "Sigos_Elizarov",
+        "interface": "irb",
+        "ipaddress": "10.63.61.17/29",
+        "unit": "56",
+        "vlans": []
+    },
+    {
+        "description": "Vlan57_corp",
+        "interface": "irb",
+        "ipaddress": "10.63.153.65/28",
+        "unit": "57",
+        "vlans": []
+    },
+    {
+        "description": "OpenAPI_IM297276",
+        "interface": "irb",
+        "ipaddress": "10.63.61.225/29",
+        "unit": "61",
+        "vlans": []
+    },
+    {
+        "description": "DiGi_USB",
+        "interface": "irb",
+        "ipaddress": "10.63.55.129/27",
+        "unit": "64",
+        "vlans": []
+    },
+    {
+        "description": "SPR1",
+        "interface": "irb",
+        "ipaddress": "10.163.76.129/27",
+        "unit": "65",
+        "vlans": []
+    },
+    {
+        "description": "SPR2",
+        "interface": "irb",
+        "ipaddress": "10.163.76.161/27",
+        "unit": "66",
+        "vlans": []
+    },
+    {
+        "description": "Security-SHTORA",
+        "interface": "irb",
+        "ipaddress": "10.8.190.1/28",
+        "unit": "67",
+        "vlans": []
+    },
+    {
+        "description": "VDI",
+        "interface": "irb",
+        "ipaddress": "10.163.158.97/28",
+        "unit": "68",
+        "vlans": []
+    },
+    {
+        "description": "KHD_IM201353",
+        "interface": "irb",
+        "ipaddress": "10.63.190.153/29",
+        "unit": "69",
+        "vlans": []
+    },
+    {
+        "description": "SHTORA_C1539662",
+        "interface": "irb",
+        "ipaddress": "10.163.253.33/28",
+        "unit": "74",
+        "vlans": []
+    },
+    {
+        "description": "FM",
+        "interface": "irb",
+        "ipaddress": "10.63.193.33/28",
+        "unit": "75",
+        "vlans": []
+    },
+    {
+        "description": "Vlan76_corp",
+        "interface": "irb",
+        "ipaddress": "10.163.76.33/28",
+        "unit": "76",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_NetScaller_Q1051593",
+        "interface": "irb",
+        "ipaddress": "10.63.120.193/29",
+        "unit": "77",
+        "vlans": []
+    },
+    {
+        "description": "vlg-fm-app_IM287328",
+        "interface": "irb",
+        "ipaddress": "10.163.95.49/29",
+        "unit": "79",
+        "vlans": []
+    },
+    {
+        "description": "Monitoring_SUIB_in_VOS215_Q1583515",
+        "interface": "irb",
+        "ipaddress": "10.163.95.41/29",
+        "unit": "80",
+        "vlans": []
+    },
+    {
+        "description": "Vlan82_corp",
+        "interface": "irb",
+        "ipaddress": "10.63.82.1/24",
+        "unit": "82",
+        "vlans": []
+    },
+    {
+        "description": "vlg-ge0-sec_C1264370",
+        "interface": "irb",
+        "ipaddress": "10.63.106.137/29",
+        "unit": "83",
+        "vlans": []
+    },
+    {
+        "description": "FM2",
+        "interface": "irb",
+        "ipaddress": "10.63.193.129/28",
+        "unit": "85",
+        "vlans": []
+    },
+    {
+        "description": "TomcatB2B",
+        "interface": "irb",
+        "ipaddress": "10.63.55.193/29",
+        "unit": "87",
+        "vlans": []
+    },
+    {
+        "description": "VLG-VDI-EdgeSight_Servers_Vlan95",
+        "interface": "irb",
+        "ipaddress": "10.63.46.1/24",
+        "unit": "95",
+        "vlans": []
+    },
+    {
+        "description": "Apache_ZN_IM181247",
+        "interface": "irb",
+        "ipaddress": "10.163.196.49/28",
+        "unit": "96",
+        "vlans": []
+    },
+    {
+        "description": "OpenAPI_2_SD1191729",
+        "interface": "irb",
+        "ipaddress": "10.163.129.113/28",
+        "unit": "97",
+        "vlans": []
+    },
+    {
+        "description": "FKSUD_AppC1266291",
+        "interface": "irb",
+        "ipaddress": "10.63.106.145/29",
+        "unit": "98",
+        "vlans": []
+    },
+    {
+        "description": "DWDM6800_monitor_IM266408",
+        "interface": "irb",
+        "ipaddress": "10.163.9.9/29",
+        "unit": "100",
+        "vlans": []
+    },
+    {
+        "description": "Link_to_router00-main-sam",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "101",
+        "vlans": []
+    },
+    {
+        "description": "Link_to_router01-main-sam",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "102",
+        "vlans": []
+    },
+    {
+        "description": "APACHE_SBMS_Vl103",
+        "interface": "irb",
+        "ipaddress": "10.63.103.113/28",
+        "unit": "103",
+        "vlans": []
+    },
+    {
+        "description": "VMware1",
+        "interface": "irb",
+        "ipaddress": "10.63.153.97/28",
+        "unit": "104",
+        "vlans": []
+    },
+    {
+        "description": "VMware2",
+        "interface": "irb",
+        "ipaddress": "10.63.153.113/28",
+        "unit": "105",
+        "vlans": []
+    },
+    {
+        "description": "EPAP_Vlan106",
+        "interface": "irb",
+        "ipaddress": "10.163.164.129/28",
+        "unit": "106",
+        "vlans": []
+    },
+    {
+        "description": "EPAP_Vlan108",
+        "interface": "irb",
+        "ipaddress": "10.63.171.65/28",
+        "unit": "108",
+        "vlans": []
+    },
+    {
+        "description": "CMSSBMS_Applications_C1332134",
+        "interface": "irb",
+        "ipaddress": "10.8.198.65/27",
+        "unit": "109",
+        "vlans": []
+    },
+    {
+        "description": "Fault_Management_SNG_L0134383",
+        "interface": "irb",
+        "ipaddress": "10.108.127.97/28",
+        "unit": "110",
+        "vlans": []
+    },
+    {
+        "description": "WebSSO_UB_C1213069",
+        "interface": "irb",
+        "ipaddress": "10.63.106.49/28",
+        "unit": "112",
+        "vlans": []
+    },
+    {
+        "description": "Vlan114_corp",
+        "interface": "irb",
+        "ipaddress": "10.163.24.249/29",
+        "unit": "114",
+        "vlans": []
+    },
+    {
+        "description": "\"VeeamBackup_Servers_#Q1099057\"",
+        "interface": "irb",
+        "ipaddress": "10.163.118.209/29",
+        "unit": "118",
+        "vlans": []
+    },
+    {
+        "description": "Gn_DNS9",
+        "interface": "irb",
+        "ipaddress": "10.8.241.41/29",
+        "unit": "119",
+        "vlans": []
+    },
+    {
+        "description": "VKS_MCU",
+        "interface": "irb",
+        "ipaddress": "10.63.120.201/29",
+        "unit": "120",
+        "vlans": []
+    },
+    {
+        "description": "DGU_SRO",
+        "interface": "irb",
+        "ipaddress": "10.163.217.225/27",
+        "unit": "122",
+        "vlans": []
+    },
+    {
+        "description": "Anti-NAT_GigaVue",
+        "interface": "irb",
+        "ipaddress": "10.63.230.121/29",
+        "unit": "124",
+        "vlans": []
+    },
+    {
+        "description": "HuaweiCRBT",
+        "interface": "irb",
+        "ipaddress": "10.63.125.1/25",
+        "unit": "125",
+        "vlans": []
+    },
+    {
+        "description": "Huawei",
+        "interface": "irb",
+        "ipaddress": "10.63.125.129/29",
+        "unit": "126",
+        "vlans": []
+    },
+    {
+        "description": "DCS",
+        "interface": "irb",
+        "ipaddress": "10.63.127.89/29",
+        "unit": "127",
+        "vlans": []
+    },
+    {
+        "description": "BRT-NTF_Q1213781",
+        "interface": "irb",
+        "ipaddress": "10.163.34.81/28",
+        "unit": "134",
+        "vlans": []
+    },
+    {
+        "description": "MNP_FTP_Q1084698",
+        "interface": "irb",
+        "ipaddress": "10.63.136.121/29",
+        "unit": "136",
+        "vlans": []
+    },
+    {
+        "description": "Apache_GUP_market_IM296547",
+        "interface": "irb",
+        "ipaddress": "10.63.42.33/29",
+        "unit": "142",
+        "vlans": []
+    },
+    {
+        "description": "NetBeholder",
+        "interface": "irb",
+        "ipaddress": "10.63.42.9/29",
+        "unit": "143",
+        "vlans": []
+    },
+    {
+        "description": "NewBRT-LCG",
+        "interface": "irb",
+        "ipaddress": "10.63.145.1/24",
+        "unit": "145",
+        "vlans": []
+    },
+    {
+        "description": "MGMT_3PAIR_Q1050194",
+        "interface": "irb",
+        "ipaddress": "10.163.16.177/29",
+        "unit": "147",
+        "vlans": []
+    },
+    {
+        "description": "Citirx_Usernet",
+        "interface": "irb",
+        "ipaddress": "10.163.21.129/26",
+        "unit": "148",
+        "vlans": []
+    },
+    {
+        "description": "TMG_Vlan149",
+        "interface": "irb",
+        "ipaddress": "10.163.226.169/29",
+        "unit": "149",
+        "vlans": []
+    },
+    {
+        "description": "CorpNetwork_Server_farm",
+        "interface": "irb",
+        "ipaddress": "10.63.150.1/24",
+        "unit": "150",
+        "vlans": []
+    },
+    {
+        "description": "Tech-Net-Psk",
+        "interface": "irb",
+        "ipaddress": "10.63.157.1/24",
+        "unit": "157",
+        "vlans": []
+    },
+    {
+        "description": "Vlan158_corp",
+        "interface": "irb",
+        "ipaddress": "10.63.158.1/24",
+        "unit": "158",
+        "vlans": []
+    },
+    {
+        "description": "NetScaler_VPX_IM297324",
+        "interface": "irb",
+        "ipaddress": "10.63.61.241/28",
+        "unit": "161",
+        "vlans": []
+    },
+    {
+        "description": "vmware_vSphere",
+        "interface": "irb",
+        "ipaddress": "10.163.9.17/28",
+        "unit": "163",
+        "vlans": []
+    },
+    {
+        "description": "NiceGF_C1355603_Vlan169",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "169",
+        "vlans": []
+    },
+    {
+        "description": "NiceGF_C1355603_Vlan170",
+        "interface": "irb",
+        "ipaddress": "10.13.5.81/28",
+        "unit": "170",
+        "vlans": []
+    },
+    {
+        "description": "WebSSO_App_Q1041253",
+        "interface": "irb",
+        "ipaddress": "10.63.171.1/28",
+        "unit": "171",
+        "vlans": []
+    },
+    {
+        "description": "WebSSO_DB_Q1041253",
+        "interface": "irb",
+        "ipaddress": "10.63.171.17/29",
+        "unit": "172",
+        "vlans": []
+    },
+    {
+        "description": "OAM_Juniper",
+        "interface": "irb",
+        "ipaddress": "10.63.61.97/28",
+        "unit": "175",
+        "vlans": []
+    },
+    {
+        "description": "OAM_sigtran",
+        "interface": "irb",
+        "ipaddress": "10.8.36.81/28",
+        "unit": "177",
+        "vlans": []
+    },
+    {
+        "description": "SFA_NTF",
+        "interface": "irb",
+        "ipaddress": "10.163.160.97/29",
+        "unit": "178",
+        "vlans": []
+    },
+    {
+        "description": "OpenAPI_IM180838",
+        "interface": "irb",
+        "ipaddress": "10.163.92.121/29",
+        "unit": "181",
+        "vlans": []
+    },
+    {
+        "description": "OAM-3PAR_IM179248",
+        "interface": "irb",
+        "ipaddress": "10.63.205.241/29",
+        "unit": "182",
+        "vlans": []
+    },
+    {
+        "description": "MobileRetWin",
+        "interface": "irb",
+        "ipaddress": "10.63.190.121/29",
+        "unit": "190",
+        "vlans": []
+    },
+    {
+        "description": "vlg-dfs2",
+        "interface": "irb",
+        "ipaddress": "10.63.190.97/29",
+        "unit": "191",
+        "vlans": []
+    },
+    {
+        "description": "Vlan192_dmz1",
+        "interface": "irb",
+        "ipaddress": "10.163.61.193/27",
+        "unit": "192",
+        "vlans": []
+    },
+    {
+        "description": "TAR_Q1227901",
+        "interface": "irb",
+        "ipaddress": "10.63.53.209/28",
+        "unit": "194",
+        "vlans": []
+    },
+    {
+        "description": "Apache_SCC",
+        "interface": "irb",
+        "ipaddress": "10.163.196.41/29",
+        "unit": "195",
+        "vlans": []
+    },
+    {
+        "description": "Apache_IBR",
+        "interface": "irb",
+        "ipaddress": "10.163.196.25/29",
+        "unit": "196",
+        "vlans": []
+    },
+    {
+        "description": "HAS_HBM_Servers_for_M2M_IM317140",
+        "interface": "irb",
+        "ipaddress": "10.163.196.97/29",
+        "unit": "197",
+        "vlans": []
+    },
+    {
+        "description": "Oracle_PAM_Q1572576",
+        "interface": "irb",
+        "ipaddress": "10.163.60.161/28",
+        "unit": "198",
+        "vlans": []
+    },
+    {
+        "description": "HAS_SCC",
+        "interface": "irb",
+        "ipaddress": "10.163.29.25/29",
+        "unit": "200",
+        "vlans": []
+    },
+    {
+        "description": "HEX_GUP",
+        "interface": "irb",
+        "ipaddress": "10.163.181.177/28",
+        "unit": "201",
+        "vlans": []
+    },
+    {
+        "description": "HAS_RMS_Q1217578",
+        "interface": "irb",
+        "ipaddress": "10.163.204.49/28",
+        "unit": "202",
+        "vlans": []
+    },
+    {
+        "description": "Q1077973_Apache_GUP",
+        "interface": "irb",
+        "ipaddress": "10.163.196.225/28",
+        "unit": "203",
+        "vlans": []
+    },
+    {
+        "description": "Red_HAT_LDN_Q1042186",
+        "interface": "irb",
+        "ipaddress": "10.163.129.81/29",
+        "unit": "204",
+        "vlans": []
+    },
+    {
+        "description": "HRS",
+        "interface": "irb",
+        "ipaddress": "10.63.205.209/28",
+        "unit": "205",
+        "vlans": []
+    },
+    {
+        "description": "NS_SDX-11515_to_VOS2_C1365165",
+        "interface": "irb",
+        "ipaddress": "10.8.192.188/27",
+        "unit": "210",
+        "vlans": []
+    },
+    {
+        "description": "NS_SDX-11515_to_VOS13_C1365165",
+        "interface": "irb",
+        "ipaddress": "10.8.192.193/27",
+        "unit": "211",
+        "vlans": []
+    },
+    {
+        "description": "NS_SDX-11515_to_VOS15_C1365165",
+        "interface": "irb",
+        "ipaddress": "10.8.192.225/27",
+        "unit": "212",
+        "vlans": []
+    },
+    {
+        "description": "NS_SDX-11515_to_VOS215_C1365165",
+        "interface": "irb",
+        "ipaddress": "10.8.193.1/27",
+        "unit": "213",
+        "vlans": []
+    },
+    {
+        "description": "VeeamBackup_Servers_Q1099057",
+        "interface": "irb",
+        "ipaddress": "10.163.118.193/28",
+        "unit": "218",
+        "vlans": []
+    },
+    {
+        "description": "U2000_PTNRTN",
+        "interface": "irb",
+        "ipaddress": "10.63.106.129/29",
+        "unit": "219",
+        "vlans": []
+    },
+    {
+        "description": "Q1151711_RadiusNPSAnyConnect",
+        "interface": "irb",
+        "ipaddress": "10.163.164.169/29",
+        "unit": "223",
+        "vlans": []
+    },
+    {
+        "description": "Isinga_Collector",
+        "interface": "irb",
+        "ipaddress": "10.163.24.33/29",
+        "unit": "224",
+        "vlans": []
+    },
+    {
+        "description": "Isinga_Backup",
+        "interface": "irb",
+        "ipaddress": "10.163.25.177/29",
+        "unit": "225",
+        "vlans": []
+    },
+    {
+        "description": "Apache_SBMS",
+        "interface": "irb",
+        "ipaddress": "10.163.226.145/29",
+        "unit": "226",
+        "vlans": []
+    },
+    {
+        "description": "SDR",
+        "interface": "irb",
+        "ipaddress": "10.163.160.81/29",
+        "unit": "227",
+        "vlans": []
+    },
+    {
+        "description": "NAS_CallCenters_VoiceGW",
+        "interface": "irb",
+        "ipaddress": "10.63.61.33/27",
+        "unit": "230",
+        "vlans": []
+    },
+    {
+        "description": "PNZVoice",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "231",
+        "vlans": []
+    },
+    {
+        "description": "DWDM8800_T32",
+        "interface": "irb",
+        "ipaddress": "10.63.61.169/29",
+        "unit": "233",
+        "vlans": []
+    },
+    {
+        "description": "Controller_wi-fi",
+        "interface": "irb",
+        "ipaddress": "10.63.61.177/29",
+        "unit": "234",
+        "vlans": []
+    },
+    {
+        "description": "Controller_wi-fi2_Q1168530",
+        "interface": "irb",
+        "ipaddress": "10.163.200.169/29",
+        "unit": "235",
+        "vlans": []
+    },
+    {
+        "description": "KSUD_C1312956",
+        "interface": "irb",
+        "ipaddress": "10.163.24.153/29",
+        "unit": "236",
+        "vlans": []
+    },
+    {
+        "description": "vlg-corprad-app",
+        "interface": "irb",
+        "ipaddress": "10.163.237.89/29",
+        "unit": "237",
+        "vlans": []
+    },
+    {
+        "description": "Netscaler_reserved_Q1157572",
+        "interface": "irb",
+        "ipaddress": "10.63.190.209/29",
+        "unit": "241",
+        "vlans": []
+    },
+    {
+        "description": "ITM_COLLECTORS_Q1301061",
+        "interface": "irb",
+        "ipaddress": "10.63.218.1/25",
+        "unit": "242",
+        "vlans": []
+    },
+    {
+        "description": "VMware_ESXi_MGM",
+        "interface": "irb",
+        "ipaddress": "10.63.53.1/27",
+        "unit": "246",
+        "vlans": []
+    },
+    {
+        "description": "VMware_ESXiVMkernel_Q1126496",
+        "interface": "irb",
+        "ipaddress": "10.63.53.33/27",
+        "unit": "247",
+        "vlans": []
+    },
+    {
+        "description": "NSIP_NetScaler_UTAG_Q1212137",
+        "interface": "irb",
+        "ipaddress": "10.163.175.105/29",
+        "unit": "248",
+        "vlans": []
+    },
+    {
+        "description": "OIB_PF_virtualization_L0152921",
+        "interface": "irb",
+        "ipaddress": "10.12.8.97/27",
+        "unit": "250",
+        "vlans": []
+    },
+    {
+        "description": "Apache_USFA",
+        "interface": "irb",
+        "ipaddress": "10.163.51.161/29",
+        "unit": "252",
+        "vlans": []
+    },
+    {
+        "description": "KYC",
+        "interface": "irb",
+        "ipaddress": "10.163.92.105/29",
+        "unit": "254",
+        "vlans": []
+    },
+    {
+        "description": "vlg-kyc-hbm02_IM294330",
+        "interface": "irb",
+        "ipaddress": "10.163.22.217/29",
+        "unit": "255",
+        "vlans": []
+    },
+    {
+        "description": "Federal_DHCP_C1382246",
+        "interface": "irb",
+        "ipaddress": "10.63.149.89/29",
+        "unit": "267",
+        "vlans": []
+    },
+    {
+        "description": "IM262635",
+        "interface": "irb",
+        "ipaddress": "10.163.118.65/27",
+        "unit": "280",
+        "vlans": []
+    },
+    {
+        "description": "Vlan282_dmz1",
+        "interface": "irb",
+        "ipaddress": "10.8.81.137/29",
+        "unit": "282",
+        "vlans": []
+    },
+    {
+        "description": "NetScaler_VOS215_Q1352923",
+        "interface": "irb",
+        "ipaddress": "10.163.160.217/29",
+        "unit": "285",
+        "vlans": []
+    },
+    {
+        "description": "Experience_VoicePortalICR",
+        "interface": "irb",
+        "ipaddress": "10.8.121.129/26",
+        "unit": "290",
+        "vlans": []
+    },
+    {
+        "description": "prep_detail_IM289969",
+        "interface": "irb",
+        "ipaddress": "10.63.55.65/28",
+        "unit": "297",
+        "vlans": []
+    },
+    {
+        "description": "vlg-junos02-dhcp_Q1274083",
+        "interface": "irb",
+        "ipaddress": "10.163.103.209/29",
+        "unit": "303",
+        "vlans": []
+    },
+    {
+        "description": "Vlan14_corp",
+        "interface": "irb",
+        "ipaddress": "10.63.6.1/24",
+        "unit": "314",
+        "vlans": []
+    },
+    {
+        "description": "CMS-SBMS_App_L0185751",
+        "interface": "irb",
+        "ipaddress": "10.163.106.65/28",
+        "unit": "317",
+        "vlans": []
+    },
+    {
+        "description": "Vlan18_corp",
+        "interface": "irb",
+        "ipaddress": "10.63.8.1/26",
+        "unit": "318",
+        "vlans": []
+    },
+    {
+        "description": "managment_A1_SNG",
+        "interface": "irb",
+        "ipaddress": "10.63.8.65/26",
+        "unit": "319",
+        "vlans": []
+    },
+    {
+        "description": "CMS_Michurina",
+        "interface": "irb",
+        "ipaddress": "10.63.2.125/25",
+        "unit": "320",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_megafonru",
+        "interface": "irb",
+        "ipaddress": "10.163.61.33/27",
+        "unit": "325",
+        "vlans": []
+    },
+    {
+        "description": "Puppet",
+        "interface": "irb",
+        "ipaddress": "10.63.103.65/28",
+        "unit": "326",
+        "vlans": []
+    },
+    {
+        "description": "OSS_FM_LB_IM241065",
+        "interface": "irb",
+        "ipaddress": "10.63.63.137/29",
+        "unit": "327",
+        "vlans": []
+    },
+    {
+        "description": "SPLUNK_Q1195437",
+        "interface": "irb",
+        "ipaddress": "10.63.53.129/28",
+        "unit": "333",
+        "vlans": []
+    },
+    {
+        "description": "AppV_Servers_SNG_Q1193351",
+        "interface": "irb",
+        "ipaddress": "10.63.210.65/29",
+        "unit": "334",
+        "vlans": []
+    },
+    {
+        "description": "MNP",
+        "interface": "irb",
+        "ipaddress": "10.63.55.161/29",
+        "unit": "335",
+        "vlans": []
+    },
+    {
+        "description": "CHAT-BOT_L0134975",
+        "interface": "irb",
+        "ipaddress": "10.12.179.1/25",
+        "unit": "336",
+        "vlans": []
+    },
+    {
+        "description": "NS_NTF_IM219836",
+        "interface": "irb",
+        "ipaddress": "10.63.180.129/29",
+        "unit": "339",
+        "vlans": []
+    },
+    {
+        "description": "CRT-GEO_IM238207",
+        "interface": "irb",
+        "ipaddress": "10.163.40.225/29",
+        "unit": "340",
+        "vlans": []
+    },
+    {
+        "description": "iLO_DNS_GiGn_C1109326",
+        "interface": "irb",
+        "ipaddress": "10.163.118.241/28",
+        "unit": "344",
+        "vlans": []
+    },
+    {
+        "description": "SORM_IMS_MNGMT_C1659319",
+        "interface": "irb",
+        "ipaddress": "10.63.196.65/27",
+        "unit": "350",
+        "vlans": []
+    },
+    {
+        "description": "IT-Platform-Virt-Unix-infra_C1303410",
+        "interface": "irb",
+        "ipaddress": "10.8.77.129/26",
+        "unit": "356",
+        "vlans": []
+    },
+    {
+        "description": "Search_Megafon_Q1088183",
+        "interface": "irb",
+        "ipaddress": "10.63.63.161/28",
+        "unit": "360",
+        "vlans": []
+    },
+    {
+        "description": "XenDeskop_for_Unified_Billing_Q1330853",
+        "interface": "irb",
+        "ipaddress": "10.163.160.177/28",
+        "unit": "373",
+        "vlans": []
+    },
+    {
+        "description": "BRT_Q1264152C1495424",
+        "interface": "irb",
+        "ipaddress": "10.163.217.145/28",
+        "unit": "374",
+        "vlans": []
+    },
+    {
+        "description": "NetScaler_VOS1_Q1322988",
+        "interface": "irb",
+        "ipaddress": "10.8.90.129/26",
+        "unit": "377",
+        "vlans": []
+    },
+    {
+        "description": "NetScaler_VOS215_Q1322988",
+        "interface": "irb",
+        "ipaddress": "10.8.90.193/26",
+        "unit": "378",
+        "vlans": []
+    },
+    {
+        "description": "HLR_Application",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "380",
+        "vlans": []
+    },
+    {
+        "description": "HLR_OAM",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "381",
+        "vlans": []
+    },
+    {
+        "description": "HLR_CNTDB",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "382",
+        "vlans": []
+    },
+    {
+        "description": "3PAR_vmw02_Q1366142",
+        "interface": "irb",
+        "ipaddress": "10.163.160.233/29",
+        "unit": "383",
+        "vlans": []
+    },
+    {
+        "description": "3PAR_ub02_Q1366142",
+        "interface": "irb",
+        "ipaddress": "10.163.160.241/29",
+        "unit": "384",
+        "vlans": []
+    },
+    {
+        "description": "FM_Servers_Q1497002",
+        "interface": "irb",
+        "ipaddress": "10.8.218.65/26",
+        "unit": "385",
+        "vlans": []
+    },
+    {
+        "description": "OAM_CDS2_C1278642",
+        "interface": "irb",
+        "ipaddress": "10.63.192.145/28",
+        "unit": "386",
+        "vlans": []
+    },
+    {
+        "description": "GF-Asteros-Contact_L0141782",
+        "interface": "irb",
+        "ipaddress": "10.12.8.65/27",
+        "unit": "387",
+        "vlans": []
+    },
+    {
+        "description": "AIC-WEB_SD1200321",
+        "interface": "irb",
+        "ipaddress": "10.63.120.209/29",
+        "unit": "390",
+        "vlans": []
+    },
+    {
+        "description": "Com_OAM",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "391",
+        "vlans": []
+    },
+    {
+        "description": "Com_Admin",
+        "interface": "irb",
+        "ipaddress": "10.163.92.9/29",
+        "unit": "392",
+        "vlans": []
+    },
+    {
+        "description": "DNS_AIISKUE_SDiU_L0221845",
+        "interface": "irb",
+        "ipaddress": "10.63.51.65/29",
+        "unit": "394",
+        "vlans": []
+    },
+    {
+        "description": "Mgm_Proxy_C1338823",
+        "interface": "irb",
+        "ipaddress": "10.8.43.81/28",
+        "unit": "395",
+        "vlans": []
+    },
+    {
+        "description": "Mgm_Proxy_2_C1338823",
+        "interface": "irb",
+        "ipaddress": "10.8.43.97/28",
+        "unit": "396",
+        "vlans": []
+    },
+    {
+        "description": "CitrixXenApp_Q1103905",
+        "interface": "irb",
+        "ipaddress": "10.63.97.1/27",
+        "unit": "397",
+        "vlans": []
+    },
+    {
+        "description": "Net_Devices",
+        "interface": "irb",
+        "ipaddress": "10.63.200.1/22",
+        "unit": "400",
+        "vlans": []
+    },
+    {
+        "description": "VDI-Client_Networks_C1249253",
+        "interface": "irb",
+        "ipaddress": "10.8.68.1/23",
+        "unit": "401",
+        "vlans": []
+    },
+    {
+        "description": "Citrix_NetScaler_GSLB",
+        "interface": "irb",
+        "ipaddress": "85.26.172.177/28",
+        "unit": "405",
+        "vlans": []
+    },
+    {
+        "description": "IS_Lync_C1401359",
+        "interface": "irb",
+        "ipaddress": "10.108.75.65/27",
+        "unit": "406",
+        "vlans": []
+    },
+    {
+        "description": "DFS_Servers_Q1096554",
+        "interface": "irb",
+        "ipaddress": "10.163.16.1/28",
+        "unit": "411",
+        "vlans": []
+    },
+    {
+        "description": "VM_Radius_for_FIX_Q1041770",
+        "interface": "irb",
+        "ipaddress": "10.163.118.57/29",
+        "unit": "418",
+        "vlans": []
+    },
+    {
+        "description": "UprDorozhnDvizheniem",
+        "interface": "irb",
+        "ipaddress": "10.63.127.1/27",
+        "unit": "427",
+        "vlans": []
+    },
+    {
+        "description": "Terminal_Servers_SNG_Q1364920",
+        "interface": "irb",
+        "ipaddress": "10.163.80.1/24",
+        "unit": "435",
+        "vlans": []
+    },
+    {
+        "description": "United_Bill_C1356168",
+        "interface": "irb",
+        "ipaddress": "10.8.224.225/28",
+        "unit": "450",
+        "vlans": []
+    },
+    {
+        "description": "SORM_IMS_C1659319",
+        "interface": "irb",
+        "ipaddress": "10.63.196.49/28",
+        "unit": "451",
+        "vlans": []
+    },
+    {
+        "description": "AP_OAM_WiFi_DHCP_WIX_C1426448",
+        "interface": "irb",
+        "ipaddress": "10.108.81.201/29",
+        "unit": "453",
+        "vlans": []
+    },
+    {
+        "description": "SMSC_SNG",
+        "interface": "irb",
+        "ipaddress": "10.63.230.193/26",
+        "unit": "467",
+        "vlans": []
+    },
+    {
+        "description": "FM-Virtual_L0095517",
+        "interface": "irb",
+        "ipaddress": "10.63.193.161/28",
+        "unit": "468",
+        "vlans": []
+    },
+    {
+        "description": "Load_Balancer_L0187397",
+        "interface": "irb",
+        "ipaddress": "10.8.177.145/28",
+        "unit": "470",
+        "vlans": []
+    },
+    {
+        "description": "PF_XenApp_L0194799",
+        "interface": "irb",
+        "ipaddress": "10.108.254.129/25",
+        "unit": "471",
+        "vlans": []
+    },
+    {
+        "description": "PF_XenApp_L0196864",
+        "interface": "irb",
+        "ipaddress": "10.108.255.17/28",
+        "unit": "472",
+        "vlans": []
+    },
+    {
+        "description": "PF_XenApp_L0196844",
+        "interface": "irb",
+        "ipaddress": "10.108.253.1/25",
+        "unit": "473",
+        "vlans": []
+    },
+    {
+        "description": "PF_XenApp_L0196834",
+        "interface": "irb",
+        "ipaddress": "10.108.253.129/25",
+        "unit": "474",
+        "vlans": []
+    },
+    {
+        "description": "PF_XenApp_L0196824",
+        "interface": "irb",
+        "ipaddress": "10.108.254.1/25",
+        "unit": "475",
+        "vlans": []
+    },
+    {
+        "description": "Megabanner_SNG_C1552793",
+        "interface": "irb",
+        "ipaddress": "10.108.96.33/28",
+        "unit": "490",
+        "vlans": []
+    },
+    {
+        "description": "Vlan201_corp",
+        "interface": "irb",
+        "ipaddress": "10.163.15.1/24",
+        "unit": "501",
+        "vlans": []
+    },
+    {
+        "description": "name_DRA_C1639625",
+        "interface": "irb",
+        "ipaddress": "",
+        "unit": "503",
+        "vlans": []
+    },
+    {
+        "description": "HAS_IBR_Q1212335_Q1279931",
+        "interface": "irb",
+        "ipaddress": "10.63.53.145/28",
+        "unit": "505",
+        "vlans": []
+    },
+    {
+        "description": "servers_Q1218907",
+        "interface": "irb",
+        "ipaddress": "10.163.26.193/28",
+        "unit": "506",
+        "vlans": []
+    },
+    {
+        "description": "Supp_bill_online_C1374823",
+        "interface": "irb",
+        "ipaddress": "10.108.81.113/29",
+        "unit": "507",
+        "vlans": []
+    },
+    {
+        "description": "Tarific_offline-online_PF_L0136026",
+        "interface": "irb",
+        "ipaddress": "10.108.81.225/27",
+        "unit": "508",
+        "vlans": []
+    },
+    {
+        "description": "Corp_phone_L0198048",
+        "interface": "irb",
+        "ipaddress": "10.108.96.1/28",
+        "unit": "509",
+        "vlans": []
+    },
+    {
+        "description": "VoicePortal_L0206312",
+        "interface": "irb",
+        "ipaddress": "10.108.96.65/27",
+        "unit": "510",
+        "vlans": []
+    },
+    {
+        "description": "BRT_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.223.65/28",
+        "unit": "528",
+        "vlans": []
+    },
+    {
+        "description": "ChargesDB_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.222.1/25",
+        "unit": "529",
+        "vlans": []
+    },
+    {
+        "description": "CRAB_na_vynose_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.222.129/27",
+        "unit": "530",
+        "vlans": []
+    },
+    {
+        "description": "HRS_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.222.161/27",
+        "unit": "531",
+        "vlans": []
+    },
+    {
+        "description": "NS_CART_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.223.81/28",
+        "unit": "532",
+        "vlans": []
+    },
+    {
+        "description": "NS_KEYSO_NS_CART_BIS_SUPPORT_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.223.97/28",
+        "unit": "533",
+        "vlans": []
+    },
+    {
+        "description": "OCS_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.222.193/27",
+        "unit": "534",
+        "vlans": []
+    },
+    {
+        "description": "OCSDB_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.223.113/28",
+        "unit": "535",
+        "vlans": []
+    },
+    {
+        "description": "SSO_plus_CUD_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.222.225/27",
+        "unit": "536",
+        "vlans": []
+    },
+    {
+        "description": "SPP_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.223.1/27",
+        "unit": "537",
+        "vlans": []
+    },
+    {
+        "description": "ODPS-WIN_for_Unified_Billing_T1341828",
+        "interface": "irb",
+        "ipaddress": "10.108.223.145/28",
+        "unit": "538",
+        "vlans": []
+    },
+    {
+        "description": "ECMSS_L0185445",
+        "interface": "irb",
+        "ipaddress": "10.8.177.193/26",
+        "unit": "541",
+        "vlans": []
+    },
+    {
+        "description": "UFM_Light_L0205428",
+        "interface": "irb",
+        "ipaddress": "10.108.223.161/27",
+        "unit": "543",
+        "vlans": []
+    },
+    {
+        "description": "virtualPlatformUNIX_L0266261",
+        "interface": "irb",
+        "ipaddress": "10.108.155.30/28",
+        "unit": "599",
+        "vlans": []
+    },
+    {
+        "description": "WAP_OAM_SNG__C1286734",
+        "interface": "irb",
+        "ipaddress": "10.8.32.177/28",
+        "unit": "605",
+        "vlans": []
+    },
+    {
+        "description": "HAS_SBMS",
+        "interface": "irb",
+        "ipaddress": "10.63.127.97/29",
+        "unit": "636",
+        "vlans": []
+    },
+    {
+        "description": "ptp-AZR-SNG-SAMArbor",
+        "interface": "irb",
+        "ipaddress": "10.63.180.5/30",
+        "unit": "680",
+        "vlans": []
+    },
+    {
+        "description": "VMware_ESXi_OAM_C1391011",
+        "interface": "irb",
+        "ipaddress": "10.8.193.193/26",
+        "unit": "681",
+        "vlans": []
+    },
+    {
+        "description": "DNS_C1605160",
+        "interface": "irb",
+        "ipaddress": "10.163.133.41/29",
+        "unit": "682",
+        "vlans": []
+    },
+    {
+        "description": "HP_C7000_C1416206",
+        "interface": "irb",
+        "ipaddress": "10.108.126.1/26",
+        "unit": "690",
+        "vlans": []
+    },
+    {
+        "description": "OAM_Wimax_via_7206",
+        "interface": "irb",
+        "ipaddress": "10.63.132.41/30",
+        "unit": "725",
+        "vlans": []
+    },
+    {
+        "description": "to_ASBR1_ptp_vrf_corp",
+        "interface": "irb",
+        "ipaddress": "10.108.82.120/31",
+        "unit": "800",
+        "vlans": []
+    },
+    {
+        "description": "to_ASBR2_ptp_vrf_corp",
+        "interface": "irb",
+        "ipaddress": "10.108.82.122/31",
+        "unit": "801",
+        "vlans": []
+    },
+    {
+        "description": "Chat_Bot_L0231556",
+        "interface": "irb",
+        "ipaddress": "10.63.195.1/25",
+        "unit": "998",
+        "vlans": []
+    },
+    {
+        "description": "Skype_for_Business_C1605164",
+        "interface": "irb",
+        "ipaddress": "10.163.207.49/29",
+        "unit": "999",
         "vlans": []
     }
 ]
