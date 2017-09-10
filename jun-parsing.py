@@ -50,7 +50,7 @@ with open('qfx.txt', mode='r') as f:
         elif 'family inet address' in line:
             match = regex_irb_ip.search(line)
             if match:
-                if match.group('unit') == last_unit:
+                if match.group('unit') == last_unit and match.group('interface') == last_interface:
                     interface_desc['ipaddress'] = match.group('ipaddress')
                 # print(match.group('interface'), match.group('unit'), match.group('ipaddress'))
 

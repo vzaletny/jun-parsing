@@ -2040,7 +2040,7 @@
     {
         "description": "NetScaller11515",
         "interface": "ae2",
-        "ipaddress": "10.63.8.91/26",
+        "ipaddress": "",
         "mode": "trunk",
         "unit": "0",
         "vlans": [
