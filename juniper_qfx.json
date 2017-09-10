@@ -730,6 +730,11 @@
         "vlans": []
     },
     {
+        "description": "\"SPAN",
+        "interface": "xe-0/0/27",
+        "vlans": []
+    },
+    {
         "description": "to_SMR-SNG135-ASBR1_Te0/2/0/0",
         "interface": "xe-0/0/92",
         "vlans": []
@@ -1864,5 +1869,10 @@
             "210-213",
             "405"
         ]
+    },
+    {
+        "description": "Georeser_MNP_Servers_Q1083619",
+        "interface": "irb",
+        "vlans": []
     }
 ]
