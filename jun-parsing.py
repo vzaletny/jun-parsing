@@ -23,7 +23,7 @@ interface_desc = None
 last_unit = '0'
 ip = ''
 
-with open('qfx.txt', mode='r') as f:
+with open('qfx.txt', mode='r', encoding='utf-8') as f:
     for line in f:
         if 'description' in line:
             match = regex_des.search(line)
@@ -72,7 +72,7 @@ with open('juniper_gfx.html', 'w', encoding='utf-8') as f:
 
 with open('juniper_qfx.json', 'w', encoding='utf-8') as f:
     json.dump(interface_list, f, sort_keys=True, indent=4, ensure_ascii=False)
-    
+
 with open('juniper_qfx.csv', 'wb') as f:
     writer = csv.DictWriter(f, quoting=csv.QUOTE_NONNUMERIC, fieldnames=interface_list[0], delimiter=';')
     writer.writeheader()
