@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import argparse
@@ -5,6 +6,7 @@ import json
 import re
 from tabulate import tabulate
 import unicodecsv as csv
+import os.path
 
 
 def convert(filename):
@@ -43,8 +45,8 @@ def convert(filename):
                                           'description': match.group('description'),
                                           'vlans': '',
                                           'unit': last_unit,
-                                          'ip': ip,
-                                          'тест': 'тестовое поле'}
+                                          'ip': ip
+                                          }
             elif 'ethernet-switching interface-mode' in line:
                 match = regex_mode.search(line)
                 if match:
@@ -65,19 +67,19 @@ def convert(filename):
                     if match.group('unit') == last_unit and match.group('interface') == last_interface:
                         interface_desc['ip'] = match.group('ip')
                         # print(match.group('interface'), match.group('unit'), match.group('ip'))
-
+    ofilename = os.path.splitext(filename)[0] + '_convert_to_'
     grid_txt = tabulate(interface_list, headers='keys', tablefmt='grid')
-    with open('juniper_qfx.txt', 'w', encoding='utf-8') as f:
+    with open(ofilename + '.txt', 'w', encoding='utf-8') as f:
         f.write(grid_txt)
 
     html_out = tabulate(interface_list, headers='keys', tablefmt='html')
-    with open('juniper_gfx.html', 'w', encoding='utf-8') as f:
+    with open(ofilename + '.html', 'w', encoding='utf-8') as f:
         f.write(html_out)
 
-    with open('juniper_qfx.json', 'w', encoding='utf-8') as f:
+    with open(ofilename + '.json', 'w', encoding='utf-8') as f:
         json.dump(interface_list, f, sort_keys=True, indent=4, ensure_ascii=False)
 
-    with open('juniper_qfx.csv', 'wb') as f:
+    with open(ofilename + '.csv', 'wb') as f:
         writer = csv.DictWriter(f, quoting=csv.QUOTE_NONNUMERIC, fieldnames=interface_list[0], delimiter=';')
         writer.writeheader()
         writer.writerows(interface_list)
