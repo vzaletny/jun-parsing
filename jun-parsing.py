@@ -7,6 +7,7 @@ import re
 from tabulate import tabulate
 import unicodecsv as csv
 import os.path
+import pandas as pd
 
 
 def convert(filename):
@@ -83,6 +84,14 @@ def convert(filename):
         writer = csv.DictWriter(f, quoting=csv.QUOTE_NONNUMERIC, fieldnames=interface_list[0], delimiter=';')
         writer.writeheader()
         writer.writerows(interface_list)
+    df = pd.DataFrame(interface_list)
+    # Create a Pandas Excel writer using XlsxWriter as the engine.
+    writer = pd.ExcelWriter(path=ofilename + '.xlsx', engine='xlsxwriter')
+
+    # Convert the dataframe to an XlsxWriter Excel object.
+    df.to_excel(writer, sheet_name='Sheet1', index=False, startcol=0)
+    # Close the Pandas Excel writer and output the Excel file.
+    writer.save()
 
 
 def getargs():
