@@ -84,6 +84,7 @@ def convert(filename):
         writer = csv.DictWriter(f, quoting=csv.QUOTE_NONNUMERIC, fieldnames=interface_list[0], delimiter=';')
         writer.writeheader()
         writer.writerows(interface_list)
+
     df = pd.DataFrame(interface_list)
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(path=ofilename + '.xlsx', engine='xlsxwriter')
