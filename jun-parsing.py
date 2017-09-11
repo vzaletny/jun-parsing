@@ -68,6 +68,7 @@ def convert(filename):
                     if match.group('unit') == last_unit and match.group('interface') == last_interface:
                         interface_desc['ip'] = match.group('ip')
                         # print(match.group('interface'), match.group('unit'), match.group('ip'))
+                        
     ofilename = os.path.splitext(filename)[0] + '_convert_to_'
     grid_txt = tabulate(interface_list, headers='keys', tablefmt='grid')
     with open(ofilename + '.txt', 'w', encoding='utf-8') as f:
