@@ -39,7 +39,8 @@ with open('qfx.txt', mode='r') as f:
                                       'description': match.group('description'),
                                       'vlans': '',
                                       'unit': last_unit,
-                                      'ip': ip}
+                                      'ip': ip,
+                                      'тест': 'тестовое поле'}
         elif 'ethernet-switching interface-mode' in line:
             match = regex_mode.search(line)
             if match:
@@ -61,11 +62,17 @@ with open('qfx.txt', mode='r') as f:
                     interface_desc['ip'] = match.group('ip')
                 # print(match.group('interface'), match.group('unit'), match.group('ip'))
 
-print(tabulate(interface_list, headers='keys', tablefmt='grid'))
+grid_txt = tabulate(interface_list, headers='keys', tablefmt='grid')
+with open('juniper_qfx.txt', 'w', encoding='utf-8') as f:
+    f.write(grid_txt)
 
-with open('juniper_qfx.json', 'w') as f:
-    json.dump(interface_list, f, sort_keys=True, indent=4)
+html_out = tabulate(interface_list, headers='keys', tablefmt='html')
+with open('juniper_gfx.html', 'w', encoding='utf-8') as f:
+    f.write(html_out)
 
+with open('juniper_qfx.json', 'w', encoding='utf-8') as f:
+    json.dump(interface_list, f, sort_keys=True, indent=4, ensure_ascii=False)
+    
 with open('juniper_qfx.csv', 'wb') as f:
     writer = csv.DictWriter(f, quoting=csv.QUOTE_NONNUMERIC, fieldnames=interface_list[0], delimiter=';')
     writer.writeheader()
