@@ -14,7 +14,7 @@ def convert(filename):
     """
     Convert QFX configuration file to some readable formats for the following analysis
     :param filename: Juniper QFX configuration file
-    :return: Create JSON, TXT, CSV and HTML translated files
+    :return: Create JSON, TXT, CSV and HTML converted files
     """
     interface_list = []
     regex_des = re.compile(r'^set interfaces +(?P<interface>\S+).*description +(?P<description>\S+)')
