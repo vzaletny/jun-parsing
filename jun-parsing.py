@@ -1,8 +1,8 @@
 """
     Convert QFX configuration file to some readable formats for
     the following analysis
-    :param: filename - Juniper QFX configuration file
-    :return: Create JSON, TXT, CSV and HTML translated files
+    filename: - Juniper QFX configuration file
+    return: Create JSON, TXT, CSV and HTML translated files
 """
 import argparse
 import json
@@ -13,94 +13,110 @@ import os.path
 import pandas as pd
 
 
-def convert(filename):
-    regex_des = re.compile(r'^set interfaces +(?P<interface>\S+)'
-                           r'.*description +(?P<description>\S+)'
-                           )
-    regex_mode = re.compile(r'^set interfaces +(?P<interface>\S+)'
-                            r'.+ethernet-switching +interface-mode'
-                            r' +(?P<mode>\S+)'
-                            )
-    regex_vlans = re.compile(r'^set interfaces +(?P<interface>\S+)'
-                             r'.+ethernet-switching +vlan +members'
-                             r' +(?P<vlan>[\d+-].+)'
-                             )
-    regex_irb = re.compile(r'^set interfaces +(?P<interface>\S+) '
-                           r'+unit (?P<unit>\d+)'
-                           r'.*description +(?P<description>\S+)'
-                           )
-    regex_irb_ip = re.compile(r'^set interfaces +(?P<interface>\S+)'
-                              r' +unit (?P<unit>\d+)'
-                              r'.*address +(?P<ip>[\d.]+/\d+)'
+def parse_qfe_config(lines):
+    intf_desc = {}
+    intfs_list = []
+    re_intf_desc = re.compile(r'^set interfaces +(?P<interface>\S+)'
+                              r'.*description +(?P<description>\S+)'
                               )
-    interfaces_list = []
-    last_interface = ''
-    interface_desc = None
-    last_unit = '0'
-    ip = ''
+    re_mode = re.compile(r'^set interfaces +(?P<interface>\S+)'
+                         r'.*interface-mode +(?P<mode>\S+)'
+                         )
+    re_vlan = re.compile(r'^set interfaces +(?P<interface>\S+)'
+                         r'.*vlan +members +(?P<vlan>[\d+-].+)'
+                         )
+    re_irb = re.compile(r'^set interfaces +(?P<interface>\S+)'
+                        r' +unit (?P<unit>\d+).*description'
+                        r' +(?P<description>\S+)'
+                        )
+    re_irb_ip = re.compile(r'^set interfaces +(?P<interface>\S+)'
+                           r' +unit (?P<unit>\d+).*address'
+                           r' +(?P<ip>[\d.]+/\d+)'
+                           )
 
-    with open(filename, mode='r', encoding='utf-8') as f:
-        for line in f:
-            if 'description' in line:
-                match = regex_des.search(line)
-                if 'irb' in line:
-                    match = regex_irb.search(line)
-                    last_unit = match.group('unit')
-                if match:
-                    if match.group('interface') != last_interface \
-                            or last_unit != '0':
-                        if last_interface and interface_desc:
-                            interfaces_list.append(interface_desc)
-                        last_interface = match.group('interface')
-                        interface_desc = {
-                            'interface': match.group('interface'),
-                            'description': match.group('description'),
-                            'vlans': '',
-                            'unit': last_unit,
-                            'ip': ip
-                            }
-            elif 'ethernet-switching interface-mode' in line:
-                match = regex_mode.search(line)
-                if match:
-                    if match.group('interface') == last_interface:
-                        interface_desc['mode'] = match.group('mode')
-            elif 'ethernet-switching vlan members' in line:
-                match = regex_vlans.search(line)
-                if match:
-                    if match.group('interface') == last_interface:
-                        # interface_desc['vlans'].append(match.group('vlan'))
-                        if not interface_desc['vlans']:
-                            interface_desc['vlans'] = match.group('vlan')
-                        else:
-                            interface_desc['vlans'] += (','
-                                                        + match.group('vlan')
-                                                        )
-            elif 'family inet address' in line:
-                match = regex_irb_ip.search(line)
-                if match:
-                    if match.group('unit') == last_unit \
-                            and match.group('interface') == last_interface:
-                        interface_desc['ip'] = match.group('ip')
-                        # print(match.group('interface'), match.group('unit'),
-                        #  match.group('ip'))
-    return interfaces_list
+    def parse_desc(cfg_line):
+        nonlocal intf_desc
+        unit = '0'
+        if 'irb' in cfg_line:
+            irb_match = re_irb.search(cfg_line)
+            unit = irb_match.group('unit')
+        intf_desc_match = re_intf_desc.search(cfg_line)
+        if intf_desc_match:
+            intf = intf_desc_match.group('interface')
+            if intf != intf_desc.get('interface') or unit != '0':
+                if intf_desc:
+                    intfs_list.append(intf_desc)
+                intf_desc = {
+                    'interface': intf_desc_match.group('interface'),
+                    'description': intf_desc_match.group('description'),
+                    'vlans': '',
+                    'unit': unit,
+                    'ip': '',
+                }
+
+    def parse_intf_mode(cfg_line):
+        nonlocal intf_desc
+        mode_match = re_mode.search(cfg_line)
+        if mode_match:
+            intf = mode_match.group('interface')
+            if intf == intf_desc.get('interface'):
+                intf_desc['mode'] = mode_match.group('mode')
+
+    def parse_vlan_member(cfg_line):
+        nonlocal intf_desc
+        vlan_match = re_vlan.search(cfg_line)
+        if vlan_match:
+            intf = vlan_match.group('interface')
+            if intf == intf_desc.get('interface'):
+                if not intf_desc['vlans']:
+                    sep = ''
+                else:
+                    sep = ','
+                intf_desc['vlans'] = \
+                    f"{intf_desc['vlans']}{sep}{vlan_match.group('vlan')}"
+
+    def parse_ip_address(cfg_line):
+        nonlocal intf_desc
+        irb_match = re_irb_ip.search(cfg_line)
+        if irb_match:
+            intf = irb_match.group('interface')
+            unit = irb_match.group('unit')
+            if intf == intf_desc.get('interface') \
+                    and unit == intf_desc.get('unit'):
+                intf_desc['ip'] = irb_match.group('ip')
+
+    for line in lines:
+        if 'description' in line:
+            parse_desc(line)
+        elif 'interface-mode' in line:
+            parse_intf_mode(line)
+        elif 'vlan members' in line:
+            parse_vlan_member(line)
+        elif 'family inet address' in line:
+            parse_ip_address(line)
+    return intfs_list
 
 
-def save_to_txt(filename, interface_list):
-    grid_txt = tabulate(interface_list, headers='keys', tablefmt='grid')
+def load_qfe_file(filename):
+    with open(filename, mode='r', encoding='utf-8') as file_handler:
+        return file_handler.readlines()
+
+
+def save_to_txt(filename, intfs_list):
+    grid_txt = tabulate(intfs_list, headers='keys', tablefmt='grid')
     with open(f'{filename}.txt', 'w', encoding='utf-8') as file_handler:
         file_handler.write(grid_txt)
 
 
-def save_to_html(filename, interface_list):
-    html_out = tabulate(interface_list, headers='keys', tablefmt='html')
+def save_to_html(filename, intfs_list):
+    html_out = tabulate(intfs_list, headers='keys', tablefmt='html')
     with open(f'{filename}.html', 'w', encoding='utf-8') as file_handler:
         file_handler.write(html_out)
 
 
-def save_to_json(filename, interface_list):
+def save_to_json(filename, intfs_list):
     with open(f'{filename}.json', 'w', encoding='utf-8') as file_handler:
-        json.dump(interface_list,
+        json.dump(intfs_list,
                   file_handler,
                   sort_keys=True,
                   indent=4,
@@ -108,42 +124,38 @@ def save_to_json(filename, interface_list):
                   )
 
 
-def save_to_csv(filename, interface_list):
+def save_to_csv(filename, intfs_list):
     with open(f'{filename}.csv', 'wb') as file_handler:
         writer = csv.DictWriter(file_handler,
                                 quoting=csv.QUOTE_NONNUMERIC,
-                                fieldnames=interface_list[0],
+                                fieldnames=intfs_list[0],
                                 delimiter=';'
                                 )
         writer.writeheader()
-        writer.writerows(interface_list)
+        writer.writerows(intfs_list)
 
 
-def save_to_xlsx(filename, interface_list):
-    df = pd.DataFrame(interface_list)
+def save_to_xlsx(filename, intfs_list):
+    df = pd.DataFrame(intfs_list)
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(path=f'{filename}.xlsx', engine='xlsxwriter')
-
     # Convert the dataframe to an XlsxWriter Excel object.
     df.to_excel(writer, sheet_name='Sheet1', index=False, startcol=0)
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
 
 
-def save_to_files(filename, interface_list):
-    save_to_func_list = [
+def save_to_files(filename, intfs_list):
+    filename = f'{os.path.splitext(filename)[0]}_convert_to_'
+    save_to_funcs = [
         save_to_txt,
         save_to_html,
         save_to_json,
         save_to_csv,
-        save_to_xlsx
+        save_to_xlsx,
     ]
-    for save_to in save_to_func_list:
-        try:
-            save_to(filename, interface_list)
-        except OSError as error:
-            print('Something went wrong')
-            exit(error)
+    for save_to_func in save_to_funcs:
+        save_to_func(filename, intfs_list)
 
 
 def getargs():
@@ -163,15 +175,14 @@ def getargs():
 def _main():
     filename = getargs().file
     try:
-        interface_list = convert(filename)
+        lines = load_qfe_file(filename)
+        intfs_list = parse_qfe_config(lines)
+        save_to_files(filename, intfs_list)
     except FileNotFoundError:
-        exit('File not found')
-    except OSError as error:
-        print('Something went wrong')
-        exit(error)
-    else:
-        filename = f'{os.path.splitext(filename)[0]}_convert_to_'
-        save_to_files(filename, interface_list)
+        exit(f'File {filename} not found')
+    except OSError as os_error:
+        print(f'I/O error with a {filename} file, something went wrong')
+        exit(os_error)
 
 
 if __name__ == "__main__":
